@@ -1,6 +1,5 @@
 <img align="center" src="https://raw.githubusercontent.com/thijswmoens/drops-of-gold-hyper/master/.github/images/drops-of-gold-hyper.png" alt="Drops of Gold color Theme for Hyper™" />
 
-
 # Drops of Gold Theme for Hyper™
 
 Drops of Gold Theme is a beautiful, fully customizable, theme for the Hyper terminal.
@@ -29,15 +28,6 @@ Drops of Gold aims to deliver a beautiful experience out of the box. However, yo
 1. Open `~/.hyper.js` in your favorite editor.
 2. Add a `drops-of-gold-hyper` object to the `config` object and specify `fontFamily` and/or `fontSize`.
 
-###### Example
-
-```javascript
-verminal: {
-  fontFamily: '"My favourite font"',
-  fontSize: 16
-}
-```
-
 <br>
 <br>
 
@@ -52,10 +42,10 @@ I have made more Drops of Gold color themes for other apps/software:
 <br><br>
 
 ## Use of Fonts
+
 I use the gorgious and free JetBrains Mono font. [You can download it from the website.](https://www.jetbrains.com/lp/mono/)
 
 <br><br>
-
 
 ## Contribute
 

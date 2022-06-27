@@ -2,7 +2,8 @@
 	"name": "drops-of-gold-hyper",
 	"displayName": "Drops of Gold theme for Hyper™",
 	"description": "Professional Hyper™ Terminal color theme.",
-	"version": "1.0",
+	"version": "v1.2.0",
+	"main": "index.js",
 	"publisher": "thijswmoens",
 	"repository": {
 		"type": "git",
@@ -21,12 +22,19 @@
 		"hyper-drops-of-gold",
 		"hyper-theme",
 		"color-scheme",
-		"theme",
 		"terminal",
 		"background",
 		"ui",
 		"syntax",
-		"gold"
+		"gold",
+		"hyper-theme",
+		"hyperterm",
+		"theme",
+		"ui",
+		"zeit",
+		"thijs moens",
+		"thijsmoens",
+		"thijs.website"
 	],
 	"devDependencies": {
 		"prettier": "2.7.1"
