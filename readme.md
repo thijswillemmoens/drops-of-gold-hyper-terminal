@@ -1,6 +1,4 @@
-<img align="center" src="https://raw.githubusercontent.com/ahmadawais/Shades-of-Purple-Hyper/master/images/Shades-of-Purple-Hyper.gif" alt="Shades-of-Purple Theme for Hyper" />
-
-# :terminal: Drops of Gold Theme for Hyper™
+# Drops of Gold Theme for Hyper™
 
 Drops of Gold Theme is a beautiful, fully customizable, theme for the Hyper terminal.
 
