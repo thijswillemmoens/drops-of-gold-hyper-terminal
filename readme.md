@@ -1,3 +1,6 @@
+<img align="center" src="https://raw.githubusercontent.com/thijswmoens/drops-of-gold-hyper/master/.github/images/drops-of-gold-hyper.png" alt="Drops of Gold color Theme for Hyper™" />
+
+
 # Drops of Gold Theme for Hyper™
 
 Drops of Gold Theme is a beautiful, fully customizable, theme for the Hyper terminal.
@@ -49,7 +52,10 @@ I have made more Drops of Gold color themes for other apps/software:
 <br><br>
 
 ## Use of Fonts
-I use th gorgious and free JetBrains Mono font. [You can download it from the website.](https://www.jetbrains.com/lp/mono/)
+I use the gorgious and free JetBrains Mono font. [You can download it from the website.](https://www.jetbrains.com/lp/mono/)
+
+<br><br>
+
 
 ## Contribute
 
