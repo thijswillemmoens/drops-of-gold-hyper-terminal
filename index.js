@@ -1,23 +1,41 @@
-const foregroundColor = '#fff';
-const backgroundColor = '#3d3d3d';
-const selectionColor = 'rgba(0, 149, 255, 0.65)';
-const overlap = 'rgba(0, 0, 0, .15)';
+// Standard Colors
 const red = '#FF3B30';
 const green = '#4CD964';
 const yellow = '#FFCC00';
 const blue = '#0095FF';
 const magenta = '#FF2D55';
 const cyan = '#5AC8FA';
-const white = '#FFFFFF';
+
+// Custom colors
+const gold = '#a08f68';
+const darkGold = '#73684b';
+const darkestGold = '#675d43';
+const black = '#2d2d2d';
+const grey = '#3d3d3d';
+const lightgrey = '#b1b1b1';
+const lightestgrey = '#f1f1f1';
+const white = '#ffffff';
+
+// Variables
+const foregroundColor = white;
+const backgroundColor = grey;
+const selectionColor = gold;
+const cursorColor = gold;
+const overlap = grey;
+
+// Font
+const font =
+	'"JetBrains Mono","SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace';
+
+// Config theme
 const defaultConfig = {
-	fontFamily:
-		'"JetBrains Mono","SF Mono", "Monaco", "Inconsolata", "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace',
-	fontSize: 12,
+	fontFamily: font,
+	fontSize: 14,
 	foregroundColor,
 	backgroundColor,
-	selectionColor,
 	borderColor: overlap,
-	cursorColor: blue,
+	selectionColor: selectionColor,
+	cursorColor: cursorColor,
 	minimal: false,
 	colors: {
 		black: backgroundColor,
@@ -40,16 +58,17 @@ const defaultConfig = {
 	vibrancy: 'ultra-dark'
 };
 
-// Check if Verminal configuration exists in ~/.hyper.js. If not, fall back to default configuration.
+// Check if Drops of Gold configuration exists in ~/.hyper.js. If not, fall back to default configuration.
 const checkConfig = (config, setting) =>
-	config.hasOwnProperty('verminal') && config.verminal[setting] !== undefined
-		? config.verminal[setting]
+	config.hasOwnProperty('dropsOfGold') &&
+	config.dropsOfGold[setting] !== undefined
+		? config.dropsOfGold[setting]
 		: defaultConfig[setting];
 
 const checkConfigColor = (config, colorName) =>
-	(config.hasOwnProperty('verminal') &&
-		config.verminal.colors &&
-		config.verminal.colors[colorName]) ||
+	(config.hasOwnProperty('dropsOfGold') &&
+		config.dropsOfGold.colors &&
+		config.dropsOfGold.colors[colorName]) ||
 	defaultConfig.colors[colorName];
 
 // Setup configs
@@ -65,7 +84,6 @@ exports.decorateConfig = config => {
 		fontWeightBold: checkConfig(config, 'fontWeightBold'),
 		backgroundColor: checkConfig(config, 'backgroundColor'),
 		foregroundColor: checkConfig(config, 'foregroundColor'),
-		selectionColor: checkConfig(config, 'selectionColor'),
 		borderColor: checkConfig(config, 'borderColor'),
 		cursorColor: checkConfig(config, 'cursorColor'),
 		minimal: checkConfig(config, 'minimal'),
@@ -88,74 +106,92 @@ exports.decorateConfig = config => {
 			lightWhite: checkConfigColor(config, 'lightWhite')
 		},
 		css: `
-    .hyper_main {
-      border: none !important;
-    }
-
-    .header_header {
-      background-color: ${
-			config && config.verminal && config.verminal.minimal
-				? 'transparent'
-				: overlap
-		} !important;
-    }
-
-    .tabs_borderShim {
-      border-color: transparent !important;
-    }
-    .tab_tab {
-      border: 0;
-    }
-    .tab_textActive {
-      background: rgba(255, 255, 255, .05);
-    }
-    .hyper-search-wrapper {
-        border: 0 !important;
-        padding: 0 !important;
-        background-color: transparent !important;
-        display: flex;
-        opacity: 0.8 !important;
-      }
-    .hyper-search-wrapper button {
-      top: 0 !important;
-      opacity: 0.8 !important;
-      padding: 0 6px;
-      cursor: pointer;
-    }
-    .hyper-search-wrapper button:hover {
-      opacity: 1.0 !important;
-    }
-    .hyper-search-wrapper button:nth-of-type(1) {
-      border-radius: 4px 0 0 4px !important;
-      border-right: 1px solid #ddd !important;
-    }
-    .hyper-search-wrapper button:nth-of-type(2) {
-      border-radius: 0 4px 4px 0 !important;
-    }
-    .hyper-search-wrapper:before {
-      width: 20px;
-      color: #000;
-      position: absolute;
-      content: "🔍";
-      font-size: 10px;
-      margin: 7px;
-      z-index: 999;
-    }
-    #hyper-search-input {
-      background-color: #fff !important;
-      border-radius: 4px;
-      box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-      padding: 3px 6px 3px 24px !important;
-      color: #000 !important;
-      opacity: 0.9 !important;
-      margin-right: 2px;
-    }
-    #hyper-search-input:focus {
-      opacity: 1.0 !important;
-      box-shadow: 0 1px 10px rgba(0, 0, 0, 1.0);
-    }
-
-    ${config.css}
-  `
+		.hyper_main {
+		  border: none !important;
+		}
+		#hyper .header_header,
+		.header_header {
+		  background-color: ${backgroundColor} !important;
+		}
+		.header_header {
+			background-color: ${
+				config && config.dropsOfGold && config.dropsOfGold.minimal
+					? 'transparent'
+					: overlap
+			} !important;
+		  }
+		  .terms_termGroupActive.jsx-3986690196 {
+			background-color: ${backgroundColor} !important;
+		  }
+		.tabs_borderShim {
+		  border-color: transparent !important;
+		}
+		.tab_tab {
+		  border: 0;
+		}
+		.tab_textActive {
+		  background: rgba(255, 255, 255, .05);
+		}
+		.jsx-1210228322 {
+			background-color: #505050 !important;
+			border-radius: 0 0 5px 5px;
+			right: 0px;
+		}
+		.search-box.jsx-1210228322 {
+			font-family: ${font};
+			color: #fff;
+			font-size: 15px;
+		}
+		.jsx-1210228322.search-button {
+			fill: ${white} !important;
+			color: ${white} !important;
+		}
+		.hyper-search-wrapper {
+			border: 0 !important;
+			padding: 0 !important;
+			background-color: transparent !important;
+			display: flex;
+			opacity: 0.8 !important;
+		  }
+		.hyper-search-wrapper button {
+		  top: 0 !important;
+		  opacity: 0.8 !important;
+		  padding: 0 6px;
+		  cursor: pointer;
+		}
+		.hyper-search-wrapper button:hover {
+		  opacity: 1.0 !important;
+		}
+		.hyper-search-wrapper button:nth-of-type(1) {
+		  border-radius: 4px 0 0 4px !important;
+		  border-right: 1px solid #ddd !important;
+		}
+		.hyper-search-wrapper button:nth-of-type(2) {
+		  border-radius: 0 4px 4px 0 !important;
+		}
+		.hyper-search-wrapper:before {
+		  width: 20px;
+		  color: #fff;
+		  position: absolute;
+		  font-size: 10px;
+		  margin: 7px;
+		  z-index: 999;
+		}
+		#hyper-search-input {
+		  background-color: #505050 !important;
+		  border-radius: 5px;
+		  box-shadow: 0;
+		  padding: 3px 6px 3px 24px !important;
+		  color: #fff !important;
+		  opacity: 0.9 !important;
+		  margin-right: 2px;
+		}
+		#hyper-search-input:focus {
+		  opacity: 1.0 !important;
+		  box-shadow: 0 1px 10px rgba(0, 0, 0, 1.0);
+		}
+	
+		${config.css}
+	  `
 	});
 };
