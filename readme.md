@@ -1,8 +1,6 @@
-<img align="center" src="https://raw.githubusercontent.com/thijswmoens/drops-of-gold-hyper/master/.github/images/drops-of-gold-hyper.png" alt="Drops of Gold color Theme for Hyper™" />
-
 # Drops of Gold Theme for Hyper™
 
-Drops of Gold Theme is a beautiful, fully customizable, theme for the Hyper terminal.
+Drops of Gold Theme is a beautiful, fully customizable, theme for the Hyper terminal. Be aware, I no longer maintain this repo.
 
 ### Install
 
@@ -31,16 +29,6 @@ Drops of Gold aims to deliver a beautiful experience out of the box. However, yo
 <br>
 <br>
 
-## More Drops of Gold
-
-I have made more Drops of Gold color themes for other apps/software:
-
--   [Drops of Gold for Google Chrome](https://github.com/thijswmoens/drops-of-gold-google-chrome)
--   [Drops of Gold for Alfred](https://github.com/thijswmoens/drops-of-gold-alfred)
--   [Drops of Gold for Obsidian](https://github.com/thijswmoens/drops-of-gold-theme-obsidian)
-
-<br><br>
-
 ## Use of Fonts
 
 I use the gorgious and free JetBrains Mono font. [You can download it from the website.](https://www.jetbrains.com/lp/mono/)
@@ -53,12 +41,3 @@ I use the gorgious and free JetBrains Mono font. [You can download it from the w
 2. [Clone](https://help.github.com/articles/cloning-a-repository/) to your local device: `git clone git@github.com:<your_github_username>/drops-of-gold-hyper.git`
 3. Install the dependencies: `npm install`
 
-## :coffee: Sponsor
-
-Enjoy my Open Source and free work and [Don't forget to tip the waiter.](https://github.com/thijswmoens/sponsor) ☕
-
-<div align="left">
-    <p><a href="https://twitter.com/thijsmoens/"><img alt="Twitter @thijsmoens" align="center" src="https://img.shields.io/badge/-@thijsmoens-gray.svg?colorA=3d3d3d&colorB=3d3d3d&style=for-the-badge" /></a>&nbsp;<small> Follow me on Twitter</small></p>
-    <p><a href="https://thijs.website/"><img alt="Blog:Thijs.website" align="center" src="https://img.shields.io/badge/-Thijs.website-gray.svg?colorA=a08f68&colorB=a08f68&style=for-the-badge" /></a>&nbsp;<small>Check out my website with interessting articles</small></p>
-    <p><a href="https://www.linkedin.com/in/thijsmoens/"><img alt="LinkedIn @thijsmoens" align="center" src="https://img.shields.io/badge/LINKEDIN-gray.svg?colorA=2d2d2d&colorB=2d2d2d&style=for-the-badge" /></a>&nbsp;<small>Connect on LinkedIn</small></p>
-</div>
