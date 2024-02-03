@@ -4,10 +4,10 @@
 	"description": "Professional Hyper™ Terminal color theme.",
 	"version": "v1.2.0",
 	"main": "index.js",
-	"publisher": "thijswmoens",
+	"publisher": "thijswillemmoens",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/thijswmoens/drops-of-gold-hyper"
+		"url": "https://github.com/thijswillemmoens/drops-of-gold-hyper"
 	},
 	"author": "Thijs Moens",
 	"license": "MIT",
