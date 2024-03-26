@@ -36,7 +36,7 @@ I use the gorgious and free JetBrains Mono font. [You can download it from the w
 3. Install the dependencies: `npm install`
 
 ## Credits
-q    
+
 <div align="left">
     <p><a href="https://raketwetenschap.com/"><img alt="Blog:Raketwetenschap" align="center" src="https://img.shields.io/badge/-Raketwetenschap.com-gray.svg?colorA=a08f68&colorB=a08f68&style=for-the-badge" /></a>&nbsp;<small>Check out my website</small></p>
     <p><a href="https://www.linkedin.com/in/thijsmoens/"><img alt="LinkedIn @thijsmoens" align="center" src="https://img.shields.io/badge/LINKEDIN-gray.svg?colorA=2d2d2d&colorB=2d2d2d&style=for-the-badge" /></a>&nbsp;<small>Connect on LinkedIn</small></p>
